@@ -69,4 +69,8 @@ public class GreetingImpl implements Greeting {
         myExpectstions.add("Ознакомление с инструментами разработки");
         return myExpectstions;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 615a403 (feature/lesson01 first commit)
