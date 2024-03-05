@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ru.sberbank.jd.lesson01;
 
 import org.junit.Assert;
@@ -56,3 +57,9 @@ public class GreetingImplTest {
 
 }
 
+=======
+import static org.junit.jupiter.api.Assertions.*;
+class GreetingImplTest {
+  
+}
+>>>>>>> 325e357 (Change test class directory)
