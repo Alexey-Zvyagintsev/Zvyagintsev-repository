@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # Default ignored files
 .idea
 target
  *.iml
+=======
+.idea
+target
+*.iml
+
+>>>>>>> master
