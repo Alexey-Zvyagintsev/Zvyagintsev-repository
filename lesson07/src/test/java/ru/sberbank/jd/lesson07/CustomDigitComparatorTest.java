@@ -36,5 +36,6 @@ public class CustomDigitComparatorTest {
         Assert.assertEquals(0, customDigitComparator.compare(1, 7));
         Assert.assertEquals(-1, customDigitComparator.compare(2, 9));
         Assert.assertEquals(1, customDigitComparator.compare(5, 2));
+        Assert.assertEquals(0, customDigitComparator.compare(-1, 1));
     }
 }

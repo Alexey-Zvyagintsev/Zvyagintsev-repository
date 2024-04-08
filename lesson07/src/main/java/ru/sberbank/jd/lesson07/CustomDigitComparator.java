@@ -23,10 +23,13 @@ public class CustomDigitComparator implements Comparator<Integer> {
             throw new NullPointerException("На вход должны подаваться числа, отличные от null");
         }
         //Оба числа четные или нечетные.
-        if (i1 % 2 == 0 && i2 % 2 == 0 || i1 % 2 != 0 && i2 % 2 != 0) {
+        boolean firstIsEven = i1 % 2 == 0;
+        boolean secondIsEven = i2 % 2 == 0;
+
+        if (firstIsEven == secondIsEven) {
             return 0;
         //Первое четное, второе нечетное.
-        } else if (i1 % 2 == 0 && i2 % 2 != 0) {
+        } else if (firstIsEven) {
             return -1;
         //Первое нечетное, второе четное.
         } else {

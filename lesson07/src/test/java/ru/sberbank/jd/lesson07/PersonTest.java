@@ -12,11 +12,12 @@ public class PersonTest {
      * test equals().
      */
     @Test
-    public void testEquals() {
+    public void testEqualsAndHashCode() {
         Person p1 = new Person("Вася", "Москва", 25);
         Person p2 = new Person("Петя", "Самара", 25);
         Assert.assertFalse(p1.equals(p2));
         Assert.assertNotEquals(p1.hashCode(), p2.hashCode());
+
         Person p3 = new Person("Вова", "сочи", 26);
         Person p4 = new Person("вОва", "Сочи", 26);
         Assert.assertTrue(p3.equals(p4));
