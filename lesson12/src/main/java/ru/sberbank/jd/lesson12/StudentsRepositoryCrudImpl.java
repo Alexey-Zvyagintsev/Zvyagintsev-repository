@@ -68,14 +68,16 @@ public class StudentsRepositoryCrudImpl implements StudentsRepositoryCrud {
      */
     @Override
     public Student selectById(UUID id) {
-
+        String statament = null;
         Student student = null;
 
         if (id == null) {
             return student;
         }
-        try (Statement statement = connection.createStatement()) {
-            ResultSet rs = statement.executeQuery("SELECT * FROM Students WHERE id = '" + id.toString() + "'");
+        statament = "SELECT id, firstName, lastName, birthDate, isGraduated FROM Students WHERE id = ?";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(statament);) {
+            preparedStatement.setString(1, id.toString());
+            ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 student = new Student(UUID.fromString(rs.getString("id")),
                         rs.getString("firstName"),
