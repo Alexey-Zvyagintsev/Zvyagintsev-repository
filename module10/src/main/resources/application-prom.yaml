@@ -1,0 +1,2 @@
+app:
+  http: https://httpbin.org/get
