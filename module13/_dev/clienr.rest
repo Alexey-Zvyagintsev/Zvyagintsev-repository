@@ -1,0 +1,18 @@
+
+### student1:password1
+GET http://localhost:8080/students
+Authorization: Basic c3R1ZGVudDE6cGFzc3dvcmQx
+
+### teacher:tchr
+POST http://localhost:8080/students/add
+Authorization: Basic dGVhY2hlcjp0Y2hy
+Content-Type: application/json;charset=UTF-8
+
+{
+    "name" : "student1"
+}
+
+### teacher:tchr
+DELETE http://localhost:8080/students/student2
+Authorization: Basic dGVhY2hlcjp0Y2hy
+
