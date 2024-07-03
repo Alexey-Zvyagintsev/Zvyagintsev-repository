@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.header {
+  padding: 0 40px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: Chartreuse;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tasks {
+  margin-top: 20px;
+  width: 40%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  background-color: LightGray;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
